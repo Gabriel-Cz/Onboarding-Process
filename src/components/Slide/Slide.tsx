@@ -1,3 +1,4 @@
+import { Text } from "@/components"
 interface SlideProps {
   title: string;
   description: string;
@@ -6,18 +7,16 @@ interface SlideProps {
 
 export const Slide: React.FC<SlideProps> = ({
   title,
-  description,
-  children
+  description
 }) => {
   return (
-    <div className="w-full h-full">
-      <h3 className="">
+    <div className="w-full h-full grid p-10">
+      <Text>
         {title}
-      </h3>
-      <p className="">
+      </Text>
+      <Text classVariant="secondary">
         {description}
-      </p>
-      {children && children}
+      </Text>
     </div>
   )
 } 
