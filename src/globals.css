@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  button {
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+
+    @apply px-5 py-2 flex justify-center text-sm text-center items-center;
+  }
+
+  .btn-primary-default {
+    @apply text-[#fff] bg-[#23C0ADE5];
+  }
+
+  .btn-primary-space {
+    @apply text-space bg-[#237EC0];
+  }
+
+  .btn-secondary-default {
+    @apply text-[#6823C0] border-[#6823C0] border;
+  }
+
+  .btn-secondary-space {
+    @apply text-space border-space;
+  }
+
+  .text-primary-default {
+    @apply text-[#000] text-4xl;
+  }
+
+  .text-primary-space {
+    @apply text-space text-4xl;
+  }
+
+  .text-secondary-default {
+    @apply text-[#000] text-opacity-80 text-xl underline mt-[40px];
+  }
+
+  .text-secondary-space {
+    @apply text-space text-opacity-80 text-xl underline mt-[40px];
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
